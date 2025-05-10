@@ -1,0 +1,344 @@
+html {
+    background-color: rgb(250,250,250);
+}
+body {
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.index {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.login {
+    padding: 10px;
+    height: 35%;
+}
+.card {
+    margin: 10px;
+    padding: 1%;
+}
+#img {
+    margin: 0 auto;
+}
+button,
+input[type=button],
+input[type=file],
+li.btn,
+a.btn,
+div.btn,
+input[type=submit] {
+    background: rgb(139,107,3);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,194,25,1) 100%);
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+input[type=submit] {
+    float: right;
+}
+button:hover,
+input[type=file]:hover,
+input[type=button]:hover,
+li.btn:hover,
+a.btn:hover,
+div.btn:hover,
+input[type=submit]:hover {
+    background: rgb(255,194,25);
+    background: linear-gradient(0deg, rgba(255,194,25,1) 0%, rgba(139,107,3,1) 100%);
+    color: rgb(255,255,255);
+}
+.icon img {
+    width: 90%;
+    margin: 0 5%;
+}
+.icon p {
+    text-align: center;
+}
+.icon {
+    padding: 5px;   
+}
+.icon:hover {
+    background-color: rgb(200,200,200);
+    border-radius: 5px;
+
+}
+a {
+    color: rgb(0,0,0);
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+.box {
+    border: solid 1px rgb(200,200,200);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+div.btn {
+    margin: 1%;
+}
+div.btn p {
+    margin: auto;
+}
+li {
+    list-style: none;
+}
+#divBusca{
+  background-color:#2F4F4F;
+  border: none;
+  border-radius:5px;
+
+}
+#divBusca img {
+    max-width: 100%;
+}
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+
+}
+.btn {
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+}
+div.btn {
+    margin: 1%;
+}
+div.btn p {
+    margin: auto;
+}
+li {
+    list-style: none;
+}
+#divBusca{
+  background-color:#2F4F4F;
+  border-top: none;
+  border-radius:5px;
+
+}
+#divBusca img {
+    max-width: 100%;
+}
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border-top:none;
+  height:32px;
+}
+.btn {
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+}
+#btnBusca {
+    border-radius: 5px;
+}
+div.estoque,
+div.listagem-venda,
+div.venda,
+div.listagem,
+div.romaneio {
+    width:100%;
+    margin: auto 0;
+    border: 1px solid;
+    border-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    color: rgb(0,0,0);
+    background-color: rgb(250,250,250);
+}
+@media all and (max-width: 768px) {
+    div.estoque,
+div.listagem-venda,
+div.venda,
+div.listagem,
+div.romaneio{
+     overflow:auto; 
+    }
+}
+div.estoque ul,
+div.listagem-venda ul,
+div.venda ul,
+div.romaneio ul,
+div.listagem ul {
+    width: 100%;
+    margin:0;
+    padding:0; 
+    border-bottom: none;
+}
+div.estoque ul:last-child,
+div.listagem-venda ul:last-child,
+div.venda ul:last-child,
+div.romaneio ul:last-child,
+div.listagem ul:last-child {
+    border-bottom:none;
+}
+div.estoque ul:nth-child(odd),
+div.listagem-venda ul:nth-child(odd),
+div.venda ul:nth-child(odd),
+div.romaneio ul:nth-child(odd),
+div.listagem ul:nth-child(odd) {
+    background-color: rgba(255,194,25,0.4);
+    color: rgb(0,0,0);
+}
+div.estoque li,
+div.listagem-venda li,
+div.venda li,
+div.romaneio li,
+div.listagem li {
+    list-style:none;
+    display:inline-block;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: 0 auto;
+}
+div.listagem li:nth-child(1) {
+    width: 10%;
+}
+div.listagem li:nth-child(2) {
+    width: 5%;
+}    
+div.listagem li:nth-child(3) {
+    width: 25%;
+}    
+div.listagem li:nth-child(4) {
+    width: 5%;
+}    
+div.listagem li:nth-child(5) {
+    width: 20%;
+}    
+div.listagem li:nth-child(6) {
+    width: 10%;
+}
+div.listagem li:nth-child(7) {
+    width: 10%;
+}
+div.listagem li:nth-child(7) {
+    width: 10%;
+}
+div.estoque ul.list-title,
+div.listagem-venda ul.list-title,
+div.venda ul.list-title,
+div.romaneio ul.list-title,
+div.listagem ul.list-title {
+    background: rgb(139,107,3);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,194,25,0.5) 100%);
+    border-radius: 5px;
+    font-weight: 600;
+}
+div.formulario,
+div.results {
+    width: 99%;
+}
+.float-right {
+    float: right;
+}
+h4 a:hover {
+    color: rgb(217,135,25);
+}
+.button,
+.upload {
+    padding: 5px;
+    margin: 5px 0;
+}
+div.romaneio li:nth-child(1) {
+    width: 5%;
+}
+div.romaneio li:nth-child(2) {
+    width: 10%;
+}    
+div.romaneio li:nth-child(3) {
+    width: 10%;
+}    
+div.romaneio li:nth-child(4) {
+    width: 45%;
+}    
+div.romaneio li:nth-child(5) {
+    width: 5%;
+}    
+div.romaneio li:nth-child(6) {
+    width: 20%;
+}
+  div.romaneio ul:nth-child(odd) {
+    font-style: italic;
+}
+            .right {
+                text-align: right;
+            }
+div.nome {
+                text-align: right;
+            }
+            div.nome p {
+                margin: 20px 0px 0px 0px;
+            }
+div.venda li:nth-child(1) {
+    width: 5%;
+}
+div.venda li:nth-child(2) {
+    width: 10%;
+}    
+div.venda li:nth-child(3) {
+    width: 45%;
+}    
+div.venda li:nth-child(4) {
+    width: 5%;
+}    
+div.venda li:nth-child(5) {
+    width: 20%;
+}    
+div.venda li:nth-child(6) {
+    width: 10%;
+}
+  div.venda ul:nth-child(odd) {
+    font-style: italic;
+}
+div.estoque li:nth-child(1) {
+    width: 5%;
+}
+div.estoque li:nth-child(2) {
+    width: 10%;
+}    
+div.estoque li:nth-child(3) {
+    width: 10%;
+}    
+div.estoque li:nth-child(4) {
+    width: 30%;
+}    
+div.estoque li:nth-child(5) {
+    width: 5%;
+}    
+div.estoque li:nth-child(6) {
+    width: 20%;
+}
+            div.estoque li:nth-child(7) {
+    width: 10%;
+}
+div.estoque li:nth-child(8) {
+    width: 5%;
+}
+  div.estoque ul:nth-child(odd) {
+    font-style: italic;
+}
+div#erro {
+    color: red;
+    background: rgb(255,163,163);
+    background: linear-gradient(90deg, rgba(255,163,163,1) 0%, rgba(249,245,245,1) 50%, rgba(255,163,163,1) 100%);
+    border: solid 1px red;
+}
+div#sucesso{
+    color: green;
+    background: rgb(148,255,108);
+    background: linear-gradient(90deg, rgba(148,255,108,1) 0%, rgba(249,245,245,1) 50%, rgba(148,255,108,1) 100%);
+    border: solid 1px green;
+}
