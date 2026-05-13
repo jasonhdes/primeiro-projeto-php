@@ -1,12 +1,15 @@
 #!/bin/bash
 set -e
 
-# The application hardcodes "localhost" as the MySQL host (access.php cannot be modified).
-# socat forwards TCP connections from 127.0.0.1:3306 on this container to the db service.
-echo "[entrypoint] Starting socat proxy: localhost:3306 → db:3306"
-socat TCP-LISTEN:3306,fork,reuseaddr TCP:db:3306 &
+# PHP treats "localhost" as a Unix socket host, not TCP.
+# mysqli_connect("localhost") looks for /var/run/mysqld/mysqld.sock — never touches TCP port 3306.
+# socat creates that socket file and forwards each connection to the db service over TCP.
+mkdir -p /var/run/mysqld
 
-# Give socat a moment to bind before Apache starts accepting requests
+echo "[entrypoint] Starting socat proxy: /var/run/mysqld/mysqld.sock → db:3306"
+socat UNIX-LISTEN:/var/run/mysqld/mysqld.sock,fork,reuseaddr TCP:db:3306 &
+
+# Give socat time to create the socket before Apache starts serving requests
 sleep 1
 
 echo "[entrypoint] Starting Apache"
