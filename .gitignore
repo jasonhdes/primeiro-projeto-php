@@ -1,0 +1,23 @@
+# Plan file — never commit
+PLAN.md
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Docker runtime
+docker/data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
