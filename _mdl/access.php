@@ -1,6 +1,6 @@
 <?php
 	//abre conexão
-	$server    = "localhost";
+	$server    = "127.0.0.1";
 	$user      = "jasonh_jason";
 	$pass      = "xcVd~T.HFJZ}";
 	$db        = "jasonh_erp";
